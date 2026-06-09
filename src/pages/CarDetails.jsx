@@ -2,6 +2,10 @@ import { useParams, Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import cars from "../data/cars";
+import Assets from '../assets/audiq7.jpg';
+import Assets2 from '../assets/benz.jpg';
+import Assets3 from '../assets/rangeroversport.png';
+import Assets4 from '../assets/bmw 5 series.png';
 
 function CarDetails() {
   const { id } = useParams();
@@ -24,7 +28,7 @@ function CarDetails() {
         <div className="details-image">
 
           <img
-            src={car.image}
+            src={car.id === 1 ? Assets : car.id === 2 ? Assets2 : car.id === 3 ? Assets3 : Assets4}
             alt={car.name}
           />
 
