@@ -1,3 +1,5 @@
+import React from 'react';
+import Assets from '../assets/showCar.png';
 function Hero() {
   return (
     <section className="hero">
@@ -22,7 +24,7 @@ function Hero() {
       </div>
 
       <img
-        src="src/assets/showCar.png"
+        src={Assets}
         alt=""
       />
 

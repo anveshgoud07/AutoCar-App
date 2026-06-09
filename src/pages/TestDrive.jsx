@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Assets from '../assets/showCar.png';
 function TestDrive() {
 
   const [formData, setFormData] = useState({
@@ -67,7 +68,7 @@ Time: ${formData.time}
           </ul>
 
           <img
-            src="src/assets/showCar.png"
+            src={Assets}
             alt="Test Drive"
             className="test-image"
           />
